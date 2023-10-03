@@ -1,0 +1,179 @@
+body{
+    margin: 0;
+    margin-right: 0;
+    font-family: "Overpass", sans-serif;
+}
+body img{
+    width: 99.9%;
+    height: 99.9%;
+    box-sizing: border-box;
+    object-fit: cover;
+    object-position: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+#log-in-content{
+    background-color: rgba(255, 255, 255, 0.818);
+    border: 15px solid rgba(0, 9, 109, 0.762);
+    border-radius: 15px;
+    height: 35rem;
+    text-align: center;
+    box-sizing: border-box; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    padding: 0;
+}
+
+#log-in-content ul{
+    list-style: none;
+    margin-top: 2rem;
+}
+#log-in-content h1{
+    color: rgb(22, 31, 112);
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 0;
+}
+.first-part{
+    background-color: rgb(246, 247, 247);
+    border: 2px solid rgb(26, 24, 24);
+    border-radius: 5px;
+    margin: 1.2rem 4.5rem;
+    padding: 1rem ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.first-part:hover{
+    background-color: rgba(212, 201, 201, 0.529);
+}
+.first-part img{
+    width: 4%;
+    height: 1.2rem;
+    margin-right:0;
+    margin-left: 1.5rem;
+        
+}
+.first-part a{
+    text-decoration: none;
+    color: rgb(26, 24, 24);
+    margin-left: 4.5rem;
+    margin-top: 0.3rem;
+}
+.first-part p{
+    margin: 0;
+    font-weight: bolder;
+    font-size: larger;
+    margin-right: 0.5rem;
+}
+#email-part p{
+    color: rgb(27, 39, 99);
+    font-size: 1.6rem;
+    font-weight: bolder;
+    text-align: start;
+    margin-left: 4.5rem;
+}
+.second-part{
+    margin: 0.5rem 4.5rem;
+}
+
+#btn{
+    margin-top: 1rem;    
+    background-color: rgb(54, 43, 102);
+    padding: 0.7rem 5rem;
+    cursor: pointer;
+    color: beige;
+}
+#btn:hover{
+    background-color: rgb(49, 67, 117);
+}
+.second-part input{
+    padding: 0.7rem 3.4rem;
+    border: 2px solid rgb(26, 24, 24);
+    cursor: pointer;
+}
+.second-part input:hover{
+    background-color: rgb(187, 207, 247);
+}
+@media only screen  and (max-width: 915px){
+    #log-in-content ul{
+        margin-right: 2rem;
+    }
+    .first-part a{
+        margin-left: 2.5rem;
+        margin-top: 0.2rem;
+    }
+    .first-part img{
+        margin-left: 0.3rem;
+    }
+}
+@media only screen  and (max-width: 768px) {
+    html{
+        display: flex;
+    }
+    body img{
+        width: 100%;
+    }
+    #log-in-content{
+        height: 27rem;
+    }
+    .first-part{
+        margin: 0.3rem 0;
+        padding: 0;
+    }
+    .first-part a{
+        font-size: 0.1rem;
+        margin-top: 0.5rem;
+        margin-left: 3.3rem;
+    }
+
+    .second-part{
+        margin: 0.1rem 0.1rem;
+        
+    }
+    .second-part input{
+        padding: 0.5rem 1rem;
+    }
+    #log-in-content ul{
+        margin-top: 0.6rem;
+    }
+    #log-in-content ul li{
+        margin-bottom: 0.4rem;
+    }
+    #log-in-content h1{
+        font-size: 2rem;
+    }
+    #email-part p{
+        margin-top: 2rem;
+       font-size: 1rem;
+       margin-left: 0;
+    }
+    #btn{
+        padding: 0.3rem 0.5rem;
+    }
+    .first-part img{
+        margin-top: 0.2rem;
+    }
+
+}
+@media only screen  and (max-width: 280px){
+    html{
+        display: flex;
+    }
+    #log-in-content{
+        width: 90%;
+    }
+    #log-in-content ul{
+        margin-right: 0.5rem;
+        margin-left: 0;
+        padding-left: 0.5rem;
+    }
+    .second-part input{
+        padding: 0.1rem 0.2rem;
+    }
+}
+

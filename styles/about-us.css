@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    font-family: "Overpass", sans-serif ;
+}
+main{
+    background-color: rgb(9, 44, 38);
+    background: linear-gradient(180deg, rgb(6, 44, 37),  rgb(2, 57, 48));
+}
+#img-part{
+    position: relative;
+}
+#img-part img{
+    width: 75%;
+    height: 25rem;
+    box-shadow: 2px 4px 6px rgb(32, 16, 16) ;
+    margin: 1rem 10rem;
+    margin-bottom: 40rem;
+    object-fit: cover;
+        
+}
+.container{
+    border: 2px solid rgb(1, 34, 29);
+    background-color: rgb(53, 94, 53);
+    border-radius: 7px;
+    box-shadow: 2px 5px 5px rgb(1, 34, 29);
+    margin: auto 1rem;
+    height: 12rem;
+    width: 33%;
+    color: white;
+
+}
+#about-us-content{
+    position: absolute;
+    top: 27rem;
+}
+#about-us-content ul{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3rem;
+}
+
+#about-us-content ul li:hover{
+    cursor: pointer;
+}
+
+#about-us-content ul li div{
+    padding: 5px 13px;
+    width: fit-content;
+    text-align: center;
+}
+#about-us-content ul li div h2{
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#about-us-content ul li div button{
+    padding: 3px 20px; 
+    border-radius: 3px;
+    background-color: rgb(9, 51, 44);
+    color: white;
+    border: 1px solid rgb(2, 27, 12);
+    cursor: pointer;
+
+}
+
+#client-part p{
+    margin-top: 0.3rem;
+}
+
+#last-section{
+    position: absolute;
+    top: 48rem;
+}
+#last-section ul{
+    display: flex;
+    background-color: rgba(22, 44, 32, 0.882);
+    color: white;
+    padding-left: 0;
+
+}
+#last-section ul p{
+    padding: 3rem 4rem;
+}
+#last-section img{
+    object-fit: cover;
+}
+
+@media only screen  and (max-width: 915px){
+    html{
+        display: flex;
+        viewport-fit: cover;
+    }
+    main{
+        height: 80rem;
+        width: 95%;
+    }
+    #img-part img{
+        width: 90%;
+        height: 25rem;
+        margin-left: 2.3rem;
+    }
+    #about-us-content ul{
+       margin-left: 0.5rem;
+       width: 90%;
+    }
+
+    .container{
+        height: 20rem;
+        width: 13rem;
+        margin-left: 0.5rem;
+    }
+    #last-section {
+        top: 51rem;
+        width: 95%;
+      }
+      #last-section img{
+        object-fit: cover;
+      }
+}
+@media only screen  and (max-width: 768px) {
+    html{
+        display: flex;
+        viewport-fit: cover;
+    }
+    main{
+        height: 125rem;
+        bottom: 0;
+    }
+    #last-section {
+      top: 88rem;
+      margin-left: 0.5rem;
+      width: 31rem;
+    }
+    #last-section img{
+        width: 100%;
+        height: 15rem;
+        object-fit: cover;
+    }
+    #last-section ul{
+        display: block;
+    }
+    #about-us-content ul{
+        display: block;
+        margin-left: 2rem;
+        width: 28rem;
+        height: 50%;
+    }
+    #about-us-content ul li{
+        margin-bottom: 2rem ;
+    }
+    .container{
+        margin: auto 2.5rem;
+        height: 15rem;
+        width: 70%;
+    }
+   
+    #img-part img{
+        width: 80%;
+        height: 25rem;
+        margin-left: 3rem;
+    }
+    
+}
+

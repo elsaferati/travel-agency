@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+     font-family: "Overpass", sans-serif;
+     color: rgb(67, 65, 65);
+ }
+ ul{
+     list-style: none;
+     margin: 0;
+ }
+ header{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     right: 0;
+     top: 0;
+     background-color: rgb(252, 249, 249);
+     height: 90px;
+     z-index: 99;
+ }
+ 
+ header img{
+     object-fit: contain; 
+ }
+ 
+ header div ul{
+     display: flex;
+     margin-right: 1.5rem;
+ }
+ header div ul li{
+     padding-left: 1.5rem;
+ }
+
+ .logo{
+    margin-right: 0;
+    mix-blend-mode: color-burn;
+ 
+ }
+ #title{
+     margin-bottom: 0;
+     padding-bottom: 0;
+ }
+ #title a {
+     font-size: 2.18rem;
+     font-family: "Croissant One";
+     text-align: left;
+     padding-left: 0rem;
+     cursor: pointer;
+     text-decoration: none;
+     color: rgb(67, 65, 65);
+ }
+
+ #title a:hover{
+    color: rgb(96, 88, 88);
+}
+
+ #under-title{
+     margin-top: 0;
+     padding-top: 0;
+ }
+ #nav-bar ul li{
+     position: relative;
+ }
+ 
+ #nav-bar a{
+     text-decoration: none;
+     color: rgb(66, 63, 63);
+ }
+ #nav-bar button{
+     border-radius: 12px;
+     padding: 6px 12px;
+     background-color: rgb(66, 63, 63);
+     color: rgb(255, 253, 245);
+     cursor: pointer;
+ }
+ #nav-bar button:hover{
+     background-color: rgb(255, 253, 245);
+     color: rgb(66, 63, 63);
+ }
+ .top-part nav{
+     padding: 6px 12px;
+  }
+ 
+ .top-part nav:hover{
+     background-color: rgb(255, 253, 245);
+     color: rgb(66, 63, 63);
+     border-radius: 12px;
+     padding: 6px 12px;
+     border: 2px solid rgb(46, 43, 43);
+ }
+ .top-part-2{
+    padding: 0.3rem 12px;
+}
+ 
+ .top-part-2 #menu:hover{
+     background-color: rgb(255, 253, 245);
+     color: rgb(66, 63, 63);
+     border-radius: 12px;
+     padding: 6px 12px;
+     border: 2px solid rgb(46, 43, 43);
+ }
+ 
+ .dropdown {
+     display: none;
+ }
+ .dropdown a:hover{
+    font-size: larger;
+}
+ 
+ #nav-bar ul li:hover .dropdown{
+     display: block;
+     position: absolute;
+     left: 0;
+     top: 100%;
+     background-color:  rgb(66, 63, 63);
+     z-index: 1;
+     border-radius: 15px;
+ }
+ #nav-bar ul li:hover .dropdown ul{
+     display: block;
+     margin: 10px;
+     
+ }
+ #nav-bar ul li:hover .dropdown  ul li{
+    width: 48px ;
+    padding: 10px;
+    padding-left: 0;
+    padding-right: 2rem;
+}
+
+ #nav-bar ul li:hover .dropdown  ul li a{
+    color: white;
+   
+}
+
+#p-part {
+   padding-left: 0;
+}
+
+ #p-part{
+     margin-right: auto;
+ }
+#footer-part {
+    height: 16rem;
+    background-color: rgb(252, 249, 249);
+    display: flex;
+    justify-content: space-between;
+}
+#footer-part ul{
+    list-style: none;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 3rem;
+}
+.footer-content-special{
+    display: flex;
+    margin-left: 0;
+    padding-left: 0;
+   
+}
+#social-part{
+    padding-left: 3rem;
+}
+
+.last-img{
+    height: 3rem;
+   mix-blend-mode: color-burn;
+   margin: 1.3rem 1rem;
+}
+
+@media only screen  and (max-width: 768px) {
+    html{
+        display: flex;
+    }
+    header{
+        width: 100%;
+    }
+  
+    footer{
+        width: 100%;
+    }
+ 
+    #footer-part{
+        display: block;
+        height: 58rem;
+        margin: 0;
+       
+    }
+    .footer-content{
+        margin-left: 4rem;
+        margin-top: 0.5rem;
+    }
+    #footer-part h3{
+        margin-left: 2rem;
+    }
+    #p-part{
+        font-size: smaller;
+    }
+  
+}
