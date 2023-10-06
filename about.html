@@ -10,52 +10,56 @@
 <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/shared.css">
     <link rel="stylesheet" href="styles/about-us.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <script src="script/header.js" type="text/javascript"></script>
     <title>About-us</title>
 </head>
 <body>
     <header>
-        <img  class="logo" src="images/logo.png" alt="Logo">
-        <ul id="p-part">
-           <li>
-            <p id="title"><a href="index.html"><strong>B E Y O N D</strong></a></p>
-           </li>
-           <li>
-               <p id="under-title" >Do More Than Travel</p>
-           </li>
-        </ul>
-
-   <div id="nav-bar">
-       <ul>
-           <li>
-               <a href="log-in.html">
-            <button>Join us</button>
-             </a>  
-           </li>
-           <li  class="top-part" >
-              <a href="about.html">
-                <nav>About us</nav>
-              </a>
-           </li>
-           <li class="top-part-2">
-            <a id="menu" href="#"> Destinations </a>
-            <div class="dropdown">      
-                <ul >  
-                    <li><a href="albania.html">Albania</a></li>
-                    <li><a href="sweden.html">Sweden</a></li>
-                    <li><a href="italy.html">Italy</a></li>
-                    <li><a href="uk.html">UK</a></li>
-                    <li><a href="greece.html">Greece</a></li>
-                    <li><a href="spain.html">Spain</a></li>
-
-            </ul>
+        <div class="logo-container">
+            <div class="logo-image-container">
+                <img class="logo" src="images/logo.png" alt="Logo" />
+            </div>
+            <div class="logo-text-container">
+                <p id="title"><a href="index.html"><strong>B E Y O N D</strong></a></p>
+                <p id="under-title">Do More Than Travel</p>
+            </div>
         </div>
-  
-            </a>
-           </li>
- 
-   </ul>
-   
-   </div>
+
+        <div class="navigation" id="navigation">
+            <div class="nav-item item-close-button">
+                <button class="close-button" onclick="closeMenu()"><img class="close-icon"
+                        src="images/close.jpg" alt="close-icon" /></button>
+            </div>
+            <div class="nav-item">
+                <a class="nav-item-href primary-button" href="log-in.html">
+                    Join us
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-item-href" href="about.html">
+                    <nav>About us</nav>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-item-href" id="menu" href="#"> Destinations </a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="albania.html">Albania</a></li>
+                        <li><a href="sweden.html">Sweden</a></li>
+                        <li><a href="italy.html">Italy</a></li>
+                        <li><a href="uk.html">UK</a></li>
+                        <li><a href="greece.html">Greece</a></li>
+                        <li><a href="spain.html">Spain</a></li>
+                    </ul>
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="burger-menu">
+            <button onclick="openMenu()"><img class="burget-icon"
+                    src="images/burger.jpg" alt="burget-icon" /></button>
+        </div>
     </header>
     <main>
         <section id="img-part">
@@ -99,14 +103,14 @@
             </ul>
           
         </section>
-        <section id="last-section">
-            <ul>
+        <section  id="last-section">
+            <div  >
                <img src="images/about-us-1.jpg" alt="agency">
             <p>Beyond is a top member of the prestigious Signature Travel Network, 
                 a highly regarded worldwide partnership allowing us to provide our customers unmatched benefits and additional value when you travel.
                  We are a Premium Member of ASTA (American Society of Travel Advisors),
                  CLIA (Cruise Line International Association) and an affiliate of BCD Travel.</p>  
-            </ul>
+            </div>
                      
         </section>
     </main>

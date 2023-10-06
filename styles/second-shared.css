@@ -90,6 +90,7 @@ main{
 
 #third-section div{
     margin: auto 1.5rem;
+    width: 80%;
 }
 #third-section div p{
     margin-top: 0.3rem;
@@ -185,6 +186,11 @@ main{
     margin-top: 1.5rem;
 }
 
+@media only screen  and (max-width: 1280px){
+  html{
+    display: flex;
+  }
+}
 
 @media only screen  and (max-width: 915px){
     html{
@@ -195,45 +201,59 @@ main{
     
     }
     #first-section ul li img{
-        width: 33rem;
        margin: 0.5rem 1rem;
+       width: 97%;
     }
-    #second-section{
+    #second-section {
+        width: 70%;
+        margin-left: 8rem;
         text-align: start;
-        margin-left: 3rem;
+        margin: 3rem 10rem;
     }
+    
     #second-section p{
-        font-size: 1.2rem;
+        font-size: 2.5rem;
     }
    #title{
-    font-size: 1rem;
+    font-size: 3rem;
    }
     #second-section ul{
         display: block;
-        margin-left: 3rem;
+        margin-left: 0.5rem;
 
     }
     #input li input{
         margin-top: 0.5rem;
-        padding: 0.2rem 2.5rem;
+        padding: 1rem 4.5rem;
+        font-size: 2rem;
     }
     #input li #date{
-        padding: 0.2rem 3.5rem;
+        padding: 1rem 9rem;
     }
+
     #input li button{
-        padding: 0.1rem 0.6rem;
+        padding: 1rem 1.8rem;
+        font-size: 2rem;
+        margin-top: 1rem;
     }
 
     #second-section img{
-       margin-left: 12rem;
+       margin-left: 20rem;
+       height: 5rem;
     }
     #third-section ul{
         display: block;
-    margin: 8rem 0.3rem;
+    margin: 8rem 8rem;
+    }
+
+    #third-section div{
+        font-size: 2rem;
+        width: 120%;
     }
     
     #third-section ul li img{
-        width: 31rem;
+        width: 140%;
+        height: 90%;
         margin-left: 0;
     }
     #third-section ul li{
@@ -244,29 +264,45 @@ main{
         display: block;
         margin-left: 5rem;
     }
+    #fourth-section h1{
+        font-size: 2rem;
+    }
     #fourth-section ul li{
-        width: 10rem;
+        width: 30%;
+        height: 10rem;
         margin-bottom: 2rem;
         align-items: center;
     }
-    #fourth-section ul li img{
-        margin: auto 2rem;
+    #fourth-section ul li img {
+        margin: auto 4rem;
+        height: 7rem;
     }
     #fourth-section ul li p{
-        margin: auto 2rem;
+        margin: 0;
+        margin-left: 1rem;
+        font-size: 2rem;
     }
     #fifth-section{
         display: block;
-    }
-    #fifth-section img{
-        margin-left: 5rem;
-        object-fit: cover;
-        width: 45%;
-        margin-bottom: 1rem;
+        margin: auto 8rem;
     }
     .in{
-        width: 26rem;
+        font-size: 2rem;
     }
+    #whole-part h2{
+        font-size: 2.5rem;
+    }
+    .title1 p{
+        font-size: 1.5rem;
+    }
+    #fifth-section img{
+        margin-left: 1rem;
+        object-fit: cover;
+        width: 70%;
+        height: 50rem;
+        margin-bottom: 1rem;
+    }
+   
 
 }
 
@@ -274,24 +310,26 @@ main{
     html{
         display: flex;
     }
+    
     #first-section ul{
         display: block;
     
     }
     #first-section ul li img{
-        width: 24rem;
        margin: 0.3rem 0.5rem;
+       width: 97%;
+       object-fit: cover;
     }
+
     #second-section{
-        text-align: start;
-        margin-left: 1rem;
+        width: 70%;
+        margin-left: 8rem;
     }
+   
     #second-section p{
-        font-size: 0.9rem;
+        font-size: 2rem;
     }
-   #title{
-    font-size: 1rem;
-   }
+   
     #second-section ul{
         display: block;
         margin-left: 0.4rem;
@@ -299,57 +337,80 @@ main{
     }
     #input li input{
         margin-top: 0.5rem;
-        padding: 0.2rem 2.5rem;
+        padding: 1rem 4.5rem;
+        font-size: 2rem;
     }
     #input li #date{
-        padding: 0.2rem 3.5rem;
+        padding: 1rem 9rem;
     }
 
     #second-section img{
-       margin-left: 10rem;
+       margin-left: 20rem;
+       height: 5rem;
     }
     #input li button{
-        padding: 0.1rem 0.6rem;
+        padding: 1rem 1.8rem;
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    #third-section div{
+        font-size: 2rem;
+        width: 120%;
+    }
+    #third-section ul li img{
+        width: 130%;
+        height: 90%;
     }
     #third-section ul{
-        display: block;
-    margin: 8rem 1rem;
+        margin-left: 5rem;
     }
     
-    #third-section ul li img{
-        width: 20rem;
-        margin-left: 0;
-    }
     #third-section ul li{
         margin-bottom: 3rem;
-        width: 21rem ;
+      
     }
     #fourth-section ul{
         display: block;
         margin-left: 5rem;
     }
+
+    #fourth-section h1{
+        font-size: 2.5rem;
+    }
     #fourth-section ul li{
-        width: 10rem;
+        width: 30%;
+        height: 10rem;
         margin-bottom: 2rem;
         align-items: center;
     }
     #fourth-section ul li img{
-        margin: auto 2rem;
+        margin: auto 4rem;
+        height: 7rem;
     }
     #fourth-section ul li p{
-        margin: auto 2rem;
+        margin: 0;
+        margin-left: 1rem;
+        font-size: 2rem;
     }
-    .in{
-        width: 20rem;
-    }
-   
+    
     #fifth-section{
         display: block;
     }
+    .in{
+        font-size: 2rem;
+    }
+    #whole-part h2{
+        font-size: 2.5rem;
+    }
+    .title1 p{
+        font-size: 1.5rem;
+    }
     #fifth-section img{
-        margin-left: 5rem;
+        margin-left: 1rem;
         object-fit: cover;
-        width: 45%;
+        width: 70%;
+        height: 50rem;
         margin-bottom: 1rem;
     }
 
